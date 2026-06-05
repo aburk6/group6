@@ -1,1 +1,94 @@
-<div class="logo">STARBUCKS</div> <h2>Happy Birthday!</h2> <p> In recognition of your contributions this semester, you have been selected to receive a complimentary Starbucks birthday reward. </p> <p> Please confirm your information below to receive your digital gift card. </p> <input type="text" placeholder="Full Name"> <input type="email" placeholder="Georgia Tech Email"> <select> <option selected disabled>Preferred Starbucks Location</option> <option>On-Campus / Student Center</option> <option>Midtown Atlanta</option> <option>Near Home</option> <option>Near Work</option> <option>Other</option> </select> <select> <option selected disabled>Favorite Starbucks Drink</option> <option>Iced Coffee</option> <option>Cold Brew</option> <option>Latte</option> <option>Caramel Macchiato</option> <option>Frappuccino</option> <option>Tea / Refresher</option> </select> <button onclick="showAwarenessPage()"> Claim My Gift Card </button> <p class="small"> Birthday rewards must be claimed within 14 days. </p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Starbucks Birthday Reward</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      width: 430px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    }
+    h2 {
+      color: #006241;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #006241;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .small {
+      font-size: 12px;
+      color: #666;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="formCard">
+    <h2>Happy Birthday!</h2>
+    <p>You have been selected to receive a complimentary Starbucks birthday reward.</p>
+    <p>Please confirm your information to claim your eGift card.</p>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Georgia Tech Email">
+    <input type="text" placeholder="GT Username">
+    
+    <select>
+      <option>Favorite Starbucks Drink</option>
+      <option>Iced Coffee</option>
+      <option>Cold Brew</option>
+      <option>Latte</option>
+      <option>Frappuccino</option>
+      <option>Tea / Refresher</option>
+    </select>
+
+    <button onclick="showTraining()">Claim Gift Card</button>
+
+    <p class="small">Birthday reward must be claimed within 14 days.</p>
+  </div>
+
+  <script>
+    function showTraining() {
+      document.body.innerHTML = `
+        <div class="card">
+          <h2>Phishing Simulation Complete</h2>
+          <p>This was a mock phishing landing page for a cybersecurity awareness project.</p>
+          <p>No information was collected, stored, or transmitted.</p>
+
+          <h3>Red Flags</h3>
+          <ul>
+            <li>Unexpected free gift card offer</li>
+            <li>Birthday personalization used to build trust</li>
+            <li>Request for unnecessary information</li>
+            <li>Unfamiliar URL</li>
+            <li>Reward-based social engineering</li>
+          </ul>
+
+          <p>Attackers often use rewards, urgency, and personal details to make phishing attempts feel legitimate.</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
